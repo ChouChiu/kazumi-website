@@ -34,7 +34,10 @@ interface Feature {
           </div>
         </div>
         <div class="hero-visual">
-          <img src="/logo.png" alt="Kazumi" class="hero-logo" />
+          <picture>
+            <source srcset="/logo.webp" type="image/webp" />
+            <img src="/logo.png" alt="Kazumi" class="hero-logo" />
+          </picture>
         </div>
       </div>
 

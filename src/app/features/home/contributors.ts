@@ -35,7 +35,7 @@ interface ContributorsData {
         <div class="core-team">
           @for (member of coreMembers; track member.name) {
             <a [href]="member.github" target="_blank" rel="noopener noreferrer" class="core-card">
-              <img [src]="member.avatar" [alt]="member.name" class="core-avatar" />
+              <img [src]="member.avatar" [alt]="member.name" class="core-avatar" loading="lazy" />
               <span class="core-name">{{ member.name }}</span>
               <span class="core-title">{{ member.title }}</span>
             </a>
@@ -53,7 +53,7 @@ interface ContributorsData {
                   rel="noopener noreferrer"
                   class="contributor-item"
                 >
-                  <img [src]="c.avatar + '?size=80'" [alt]="c.name" class="contributor-avatar" />
+                  <img [src]="c.avatar + '?size=40'" [alt]="c.name" class="contributor-avatar" loading="lazy" />
                   <span class="contributor-name">{{ c.name }}</span>
                 </a>
               }
@@ -223,13 +223,13 @@ export class ContributorsComponent {
 
 	coreMembers: CoreMember[] = [
 		{
-			avatar: "https://github.com/Predidit.png?size=80",
+			avatar: "https://github.com/Predidit.png?size=40",
 			name: "Predidit",
 			title: "作者",
 			github: "https://github.com/Predidit",
 		},
 		{
-			avatar: "https://github.com/ErBWs.png?size=80",
+			avatar: "https://github.com/ErBWs.png?size=40",
 			name: "ErBW_s",
 			title: "鸿蒙版作者",
 			github: "https://github.com/ErBWs",

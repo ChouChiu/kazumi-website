@@ -27,7 +27,10 @@ interface NavItem {
     <header class="header">
       <div class="header-inner">
         <a routerLink="/" class="logo">
-          <img src="/logo.png" alt="Kazumi" class="logo-img" />
+          <picture>
+            <source srcset="/logo.webp" type="image/webp" />
+            <img src="/logo.png" alt="Kazumi" class="logo-img" />
+          </picture>
         </a>
 
         <span class="spacer"></span>
@@ -122,7 +125,10 @@ interface NavItem {
       <aside class="mobile-sidebar">
         <div class="sidebar-header">
           <a routerLink="/" class="sidebar-logo" (click)="menuOpen.set(false)">
-            <img src="/logo.png" alt="Kazumi" class="logo-img" />
+            <picture>
+              <source srcset="/logo.webp" type="image/webp" />
+              <img src="/logo.png" alt="Kazumi" class="logo-img" />
+            </picture>
           </a>
           <button mat-icon-button class="sidebar-close" (click)="menuOpen.set(false)" aria-label="关闭菜单">
             <mat-icon>close</mat-icon>
